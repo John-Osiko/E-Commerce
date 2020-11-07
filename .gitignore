@@ -1,0 +1,8 @@
+projo/__pycache__
+app/__pycache__
+app/__init__.pyc
+projo/__init__.pyc
+projo/settings.pyc
+app/apps.pyc
+db.sqlite3
+ecommerce
