@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<div class="container">
+    <div class="card-body" style="margin-top:90px;">
+        <h5 class="card-title"><a>Log In</a> <span style="float:right">Don't have an account? <a href="{% url 'register' %}" class="text-info">Sign up</a></span></h5>
+        <div class="card-text">
+            <form action="" method="post" novalidate>
+                {% csrf_token%}
+                {{ form|crispy}}
+                <br>
+                <button type="submit" class="btn btn-info btn-sm">Log In</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
